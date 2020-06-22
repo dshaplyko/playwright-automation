@@ -1,0 +1,22 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "Repository for Automated testing using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./specs/*.spec.js --timeout 10000 -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshaplyko/playwright-automation.git"
+  },
+  "author": "dmitryshaplyko@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
