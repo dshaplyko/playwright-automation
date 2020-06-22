@@ -7,17 +7,16 @@ describe('Test', () => {
   beforeEach(async () => {
     browser = await chromium.launch({headless: false});
     const context = await browser.newContext();
+
     page = await context.newPage();
     await page.goto('https://t-notes.herokuapp.com/#/login');
   });
 
-  after( async () => {
+  afterEach( async () => {
     await browser.close();
   });
 
-  it('My first test using Playwright', async function() {
-    
-
+  it('My first test using Playwright', async () => {
     const loginPage = new LoginPage(page);
     await loginPage.login('test@mail.com', 'password');
   });

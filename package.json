@@ -4,7 +4,7 @@
   "description": "Repository for Automated testing using Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./specs/*.spec.js --timeout 10000 -R spec"
+    "test": "mocha ./specs/**/*.spec.js --timeout 10000 -R spec"
   },
   "repository": {
     "type": "git",
